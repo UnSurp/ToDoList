@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'JetMono';
+    src: url(jetMono/JetBrainsMono-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetMono';
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+body{
+    background-color: #111218;
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    cursor: default;
+}
+
+h1{
+    cursor: default;
+    font-weight: bold;
+}
+
+button{
+    cursor: pointer;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input{
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* отмена крестика у input */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	-webkit-appearance:none;
+}
+
+
+/* запрет на выделение */
+.unselection{
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* цвет веделение */
+::selection{
+    color: white;
+    background-color: #6472FF;
+}
+
+/* настройка scrollbar */
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #1b1d25;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #383f90;
+    border-radius: 6px;
+    border: #1b1d25 solid 3.5px;
+    transition: 0.5s ease;
+}
+
+::-webkit-scrollbar-thumb:active{
+    background-color: #282d67;
+}

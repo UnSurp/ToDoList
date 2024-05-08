@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="shortcut icon" href="image/logoToDo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="general.css">
+</head>
+<body>
+    <header>
+        <img class="logoImg" src="image/logoToDo.svg" alt="Логотип">
+        <h2>UnSurp To Do List</h2>
+    </header>
+
+
+    <main>
+        <div class="todo">
+            <div class="create">
+                <form id="add-form">
+                    <input type="text" id="add-input" placeholder="Напишите дело">
+                    <button id="btnAdd" type="submit">
+                        <img src="image/plusBtn.svg">
+                        <p class="btnP">Добавить</p>
+                    </button>
+                    <button id="btnClear">
+                        <img src="image/trashIcon.svg">
+                        <p class="btnP">Очистить все</p>
+                    </button>
+                </form>
+            </div>
+            <div>
+                <ul id="list">
+
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
